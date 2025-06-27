@@ -1,0 +1,58 @@
+.dashboard-page{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+.logout-button {
+    display: flex;
+    background-color: #fff;
+    padding: 10px 15px 10px 15px;
+    margin: 3px;
+    color: #3f51b5;
+    border: 0px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    top: -6.25vh;
+    left: 93vw;
+    font-weight: bold;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dashboard-header{
+    height: 9vh;
+}
+
+.dashboard-body{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 15px;
+    height: 91vh;
+    border-radius: 12px;
+}
+
+.dashboard-navbar{
+    /* display: flex; */
+    background-color: #fff;
+    border-radius: 12px;
+    width: 15vw;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding: 20px;
+}
+
+.dashboard-main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    margin-top: 0px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
