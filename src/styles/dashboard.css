@@ -1,7 +1,7 @@
 .dashboard-page{
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 
 
@@ -29,30 +29,121 @@
 
 .dashboard-body{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0px;
     padding: 15px;
+    padding-top: 0px;
     height: 91vh;
     border-radius: 12px;
-}
-
-.dashboard-navbar{
-    /* display: flex; */
-    background-color: #fff;
-    border-radius: 12px;
-    width: 15vw;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    padding: 20px;
 }
 
 .dashboard-main{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    margin: 20px;
-    padding: 10px;
-    margin-top: 0px;
-    border-radius: 12px;
     background-color: #fff;
+    margin: 20px;
+    height: 80vh;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
+
+.dashboard-grid{
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin: 10px;
+    border-radius: 12px;
+    padding: 10px 15px 10px 15px;
+    background-color: aliceblue;
+}
+
+.doc-search{
+    display: flex;
+    background-color: transparent;
+    margin: 8px;
+    
+}
+
+.doc-search .serach-icon{
+
+}
+
+.add-btn{
+    display: flex;
+    padding: 10px 12px 10px 10px;
+    margin: 20px;
+    border: none;
+    background-color: #3f51b5;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.add-btn-txt{
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.document-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.document-card{
+    background-color: #fff;
+    display: block;
+    width: 190px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.doc-search input{
+    padding: 15px;
+    width: 85%;
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.doc-search .filter-btn{
+    display: flex;
+    padding: 15px 15px 10px 25px;
+    margin-left: 10px;
+    font-size: 16px;
+    letter-spacing: .8px;
+    width: 15%;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.filter-btn-txt{
+    margin-left: 8px;
+}
+
+.activity-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    width: 20vw;
+    margin: 10px;
+    border-radius: 12px;
+    padding: 10px 15px 10px 15px;
+    background-color: aquamarine;
+}
+
+.activity-header{
+    font-size: 20px;
+    padding: 10px;
+    letter-spacing: .75px;
+}
+
+
 
