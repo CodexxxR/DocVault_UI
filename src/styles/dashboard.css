@@ -3,7 +3,46 @@
     flex-direction: column;
     overflow-x:hidden;
 }
+.doc-search-filter {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.doc-search-filter select,
+.doc-search-filter input {
+    padding: 6px 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+}
+.date-range-inputs {
+    display: flex;
+    gap: 0.5rem;
+}
 
+.filter-select{
+    height: 42px;
+    cursor: pointer;
+}
+
+.filter-select:hover{
+    box-shadow: rgba(108, 108, 255, 0.25) 0px 13px 27px -5px, rgba(108, 108, 255, 0.3) 0px 8px 16px -8px;
+}
+
+.filter-search{
+    width: 80%;
+    height: 30px;
+}
+
+.filter-search:hover{
+    box-shadow: rgba(108, 108, 255, 0.25) 0px 13px 27px -5px, rgba(108, 108, 255, 0.3) 0px 8px 16px -8px;
+}
+
+.filter-search:active{
+    box-shadow: rgba(108, 108, 255, 0.25) 0px 13px 27px -5px, rgba(108, 108, 255, 0.3) 0px 8px 16px -8px;
+}
 
 .logout-button {
     display: flex;
@@ -51,7 +90,7 @@
 .dashboard-grid{
     display: flex;
     flex-direction: column;
-    width: 75vw;
+    width: 78vw;
     margin: 10px;
     border-radius: 12px;
     padding: 10px 15px 10px 15px;
@@ -65,14 +104,21 @@
     
 }
 
-.doc-search .serach-icon{
+.new-doc-btn{
+    display: flex;
+}
 
+.new-doc-btn span{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .add-btn{
     display: flex;
     padding: 10px 12px 10px 10px;
     margin: 20px;
+    margin-right: 7px;
     border: none;
     background-color: #3f51b5;
     color: #fff;
@@ -88,17 +134,78 @@
 .document-cards{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    padding: 20px;
 }
 
 .document-card{
     background-color: #fff;
-    display: block;
-    width: 190px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 19.2vw;
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 0px;
     margin: 10px;
     border-radius: 12px;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.doc-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.doc-card-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.doc-card-actions button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    box-shadow: rgba(108, 108, 255, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    margin-right: 8px;
+    height: 30px;
+    width: 30px;
+}
+
+.document-card:hover{
+    box-shadow: rgba(108, 108, 255, 0.25) 0px 54px 55px, rgba(108, 108, 255, 0.12) 0px -12px 30px, rgba(108, 108, 255, 0.12) 0px 4px 6px, rgba(108, 108, 255, 0.17) 0px 12px 13px, rgba(108, 108, 255, 0.09) 0px -3px 5px;
+}
+
+.document-card h3{
+    height: 40px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.document-card p{
+    padding-left: 7px;
+    font-size: 13px;
+}
+
+.document-card .doc-type{
+    margin-top: 0px;
+}
+
+.document-card .tags{
+    margin-top: 0.5rem;
+}
+
+.document-card .document-tag{
+    display: inline-block;
+    background: rgba(108, 108, 255, 0.625);
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin-right: 5px;
+    font-size: 0.8rem;
 }
 
 .doc-search input{
@@ -136,7 +243,7 @@
     margin: 10px;
     border-radius: 12px;
     padding: 10px 15px 10px 15px;
-    background-color: aquamarine;
+    background-color: aliceblue;
 }
 
 .activity-header{

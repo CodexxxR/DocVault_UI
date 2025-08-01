@@ -1,0 +1,57 @@
+.activity-container {
+  padding: 1rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.activity-header {
+  font-size: 1.6rem;
+  margin-top: 0px;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-item {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 1rem;
+  line-height: 22px;
+  font-size: 0.9rem;
+}
+
+.activity-item:hover{
+    box-shadow: rgba(108, 108, 255, 0.24) 0px 3px 8px;
+}
+
+.activity-type {
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.activity-type.upload {
+  background-color: #d1f7c4;
+  color: #2b8a3e;
+}
+
+.activity-type.delete {
+  background-color: #f8d7da;
+  color: #a94442;
+}
+
+.activity-type.edit {
+  background-color: #fff3cd;
+  color: #856404;
+}

@@ -5,6 +5,8 @@ import LoginPage from './pages/LoginPage'
 import CallbackPage from './pages/Callback'
 import Dashboard from './pages/Dashboard'
 import PrivateRoute from './components/PrivateRoute'
+import DocumentPreviewUpload from './pages/DocPreviewUpload'
+import Profile from './pages/Profile'
 
 const App = () => {
   
@@ -19,7 +21,19 @@ const App = () => {
               <Dashboard />
             </PrivateRoute>
           }
-        />
+      />
+      <Route path="/preview" element={
+            <PrivateRoute>
+              <DocumentPreviewUpload />
+            </PrivateRoute>
+          }
+      />
+      <Route path="/profile" element={
+            <PrivateRoute>
+              <Profile />
+            </PrivateRoute>
+          }
+      />
     </Routes>
   )
 }

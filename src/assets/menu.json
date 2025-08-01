@@ -1,10 +1,10 @@
 [
     {
-        "name": "DashBoard",
+        "name": "Dashboard",
         "permission": "ALL_USERS"
     },
     {
-        "name": "Upload",
+        "name": "Preview",
         "permission": "ALL_USERS"
     },
     {
