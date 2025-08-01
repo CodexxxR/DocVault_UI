@@ -15,6 +15,7 @@ const Profile = () => {
     userManager.getUser().then((loadedUser) => {
       setUser(loadedUser);
     });
+    console.log(user?.profile)
   }, []);
 
   const roles = user ? getUserRoles(user) : [];
@@ -26,10 +27,17 @@ const Profile = () => {
     (doc) => doc.uploadedBy === username
   );
 
+  const handleLogoutClick = () => {
+        userManager.signoutRedirect({
+            post_logout_redirect_uri: 'http://localhost:5173/login'
+        });
+    }
+
   return (
     <div className="profile-page">
       <div className="profile-header">
         <LoginHeader />
+        <button className="logout-button" onClick={handleLogoutClick}>Log-Out</button>
       </div>
       <div className="profile-body">
         <NavBar currentUserRole={isAdmin ? "ADMIN" : "ALL_USERS"} />
