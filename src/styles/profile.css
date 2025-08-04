@@ -1,0 +1,88 @@
+/* src/styles/profile.css */
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.profile-header{
+    height: 9vh;
+}
+
+
+.logout-button {
+    display: flex;
+    background-color: #fff;
+    padding: 10px 15px 10px 15px;
+    margin: 3px;
+    color: #3f51b5;
+    border: 0px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    top: -6.25vh;
+    left: 93vw;
+    font-weight: bold;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.profile-body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 15px;
+    padding-top: 0px;
+    height: 91vh;
+    border-radius: 12px;
+}
+
+.profile-main{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin: 20px;
+    height: 80vh;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.user-info {
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.user-docs {
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.user-docs-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin-top: 1rem;
+}
+
+.profile-doc-card {
+  padding: 1rem;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.manage-link {
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  display: inline-block;
+}

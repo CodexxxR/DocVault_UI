@@ -1,0 +1,25 @@
+.user-permissions-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.user-info p {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.permissions-toggles label {
+  margin-right: 1rem;
+  font-size: 14px;
+  cursor: pointer;
+}

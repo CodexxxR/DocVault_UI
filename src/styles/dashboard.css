@@ -1,0 +1,285 @@
+.dashboard-page{
+    display: flex;
+    flex-direction: column;
+    overflow-x:hidden;
+}
+.doc-search-filter {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.doc-search-filter select,
+.doc-search-filter input {
+    padding: 6px 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+}
+.date-range-inputs {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.filter-select{
+    height: 42px;
+    cursor: pointer;
+}
+
+.filter-select:hover{
+    box-shadow: rgba(108, 108, 255, 0.25) 0px 13px 27px -5px, rgba(108, 108, 255, 0.3) 0px 8px 16px -8px;
+}
+
+.filter-search{
+    width: 80%;
+    height: 30px;
+}
+
+.filter-search:hover{
+    box-shadow: rgba(108, 108, 255, 0.25) 0px 13px 27px -5px, rgba(108, 108, 255, 0.3) 0px 8px 16px -8px;
+}
+
+.filter-search:active{
+    box-shadow: rgba(108, 108, 255, 0.25) 0px 13px 27px -5px, rgba(108, 108, 255, 0.3) 0px 8px 16px -8px;
+}
+
+.logout-button {
+    display: flex;
+    background-color: #fff;
+    padding: 10px 15px 10px 15px;
+    margin: 3px;
+    color: #3f51b5;
+    border: 0px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    top: -6.25vh;
+    left: 93vw;
+    font-weight: bold;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dashboard-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 7vh;
+    margin-bottom: 1.5vh;
+}
+
+.logout-btn{
+    
+}
+
+.dashboard-body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 15px;
+    padding-top: 0px;
+    height: 91vh;
+    border-radius: 12px;
+}
+
+.dashboard-main{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    margin: 20px;
+    height: 80vh;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.dashboard-grid{
+    display: flex;
+    flex-direction: column;
+    width: 78vw;
+    margin: 10px;
+    border-radius: 12px;
+    padding: 10px 15px 10px 15px;
+    background-color: aliceblue;
+}
+
+.doc-search{
+    display: flex;
+    background-color: transparent;
+    margin: 8px;
+    
+}
+
+.new-doc-btn{
+    display: flex;
+}
+
+.new-doc-btn span{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-btn{
+    display: flex;
+    padding: 10px 12px 10px 10px;
+    margin: 20px;
+    margin-right: 7px;
+    border: none;
+    background-color: #3f51b5;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.add-btn-txt{
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.document-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.document-card{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 19.2vw;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 0px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.doc-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.doc-card-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.doc-card-actions button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    box-shadow: rgba(108, 108, 255, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    margin-right: 8px;
+    height: 30px;
+    width: 30px;
+}
+
+.doc-card-actions .delete-btn:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.doc-card-actions .edit-btn:hover{
+    background-color: #3f51b5;
+    color: #fff;
+}
+
+.document-card:hover{
+    box-shadow: rgba(108, 108, 255, 0.25) 0px 54px 55px, rgba(108, 108, 255, 0.12) 0px -12px 30px, rgba(108, 108, 255, 0.12) 0px 4px 6px, rgba(108, 108, 255, 0.17) 0px 12px 13px, rgba(108, 108, 255, 0.09) 0px -3px 5px;
+}
+
+.document-card h3{
+    height: 40px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.document-card p{
+    padding-left: 7px;
+    font-size: 13px;
+}
+
+.document-card .doc-type{
+    margin-top: 0px;
+}
+
+.doc-fileName{
+    margin-top: 0px;
+    word-wrap: break-word;
+}
+
+.doc-uploadedBy{
+    margin-top: 10px;
+}
+
+.document-card .tags{
+    margin-top: 0.5rem;
+}
+
+.document-card .document-tag{
+    display: inline-block;
+    background: rgba(108, 108, 255, 0.625);
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+
+.doc-search input{
+    padding: 15px;
+    width: 85%;
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.doc-search .filter-btn{
+    display: flex;
+    padding: 15px 15px 10px 25px;
+    margin-left: 10px;
+    font-size: 16px;
+    letter-spacing: .8px;
+    width: 15%;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.filter-btn-txt{
+    margin-left: 8px;
+}
+
+.activity-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    width: 20vw;
+    margin: 10px;
+    border-radius: 12px;
+    padding: 10px 15px 10px 15px;
+    background-color: aliceblue;
+}
+
+.activity-header{
+    font-size: 20px;
+    padding: 10px;
+    letter-spacing: .75px;
+}
+
+
+

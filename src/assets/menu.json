@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Dashboard",
+        "permission": "ALL_USERS"
+    },
+    {
+        "name": "Preview",
+        "permission": "ALL_USERS"
+    },
+    {
+        "name": "Profile",
+        "permission": "ALL_USERS"
+    },
+    {
+        "name": "AdminPage",
+        "permission": "ADMIN"
+    }
+]
