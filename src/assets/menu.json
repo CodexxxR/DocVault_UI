@@ -12,7 +12,7 @@
         "permission": "ALL_USERS"
     },
     {
-        "name": "Admin",
+        "name": "AdminPage",
         "permission": "ADMIN"
     }
 ]

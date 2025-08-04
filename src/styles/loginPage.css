@@ -14,6 +14,10 @@ body, html {
 }
 
 .login-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 4vh;
   width: 100%;
   padding: 1rem 2rem;
   padding-left: 4rem;
@@ -21,7 +25,47 @@ body, html {
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+.logo-main{
+  font-size: 3rem;
+}
+
+.welcome-logout{
+  display: flex;
+}
+
+.welcome-logout span{
+  padding: 10px;
+  position: relative;
+  bottom: 4px;
+}
+
+.welcome-logout .admin-icon{
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+  color: #3f51b5;
+  cursor: pointer;
+}
+
+.logout-btn{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 5px;
+  padding: 10px 14px 10px 14px;
+  align-items: center;
+  height: 5vh;
+  border-radius: 7px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .logo {
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
 }

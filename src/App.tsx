@@ -7,9 +7,13 @@ import Dashboard from './pages/Dashboard'
 import PrivateRoute from './components/PrivateRoute'
 import DocumentPreviewUpload from './pages/DocPreviewUpload'
 import Profile from './pages/Profile'
+import AdminPage from './pages/AdminPage'
+import { getUserRoles } from './utils/getUserRoles'
+import { useEffect, useState } from 'react'
+import { userManager } from './auth/AuthService'
 
 const App = () => {
-  
+  const [user, setUser] = useState<any>(null);
 
   return (
     <Routes>
@@ -31,6 +35,12 @@ const App = () => {
       <Route path="/profile" element={
             <PrivateRoute>
               <Profile />
+            </PrivateRoute>
+          }
+      />
+      <Route path="/adminpage" element={
+            <PrivateRoute>
+              <AdminPage />
             </PrivateRoute>
           }
       />

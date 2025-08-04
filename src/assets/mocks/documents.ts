@@ -3,6 +3,7 @@ export const mockDocuments = [
   {
     id: "doc-001",
     title: "Quarterly Financial Report",
+    fileName: "QuaterlyFinRep.pdf",
     docType: "pdf",
     uploadedBy: "John Doe",
     uploadedAt: "2025-07-30T10:15:00Z",
@@ -12,6 +13,7 @@ export const mockDocuments = [
   {
     id: "doc-002",
     title: "Product Roadmap",
+    fileName: "ProdRoadmap.png",
     docType: "img",
     uploadedBy: "Jane Smith",
     uploadedAt: "2025-07-28T14:50:00Z",
@@ -21,6 +23,7 @@ export const mockDocuments = [
   {
     id: "doc-003",
     title: "Onboarding Guide",
+    fileName: "something.txt",
     docType: "txt",
     uploadedBy: "Alice Johnson",
     uploadedAt: "2025-07-20T09:00:00Z",
@@ -30,6 +33,7 @@ export const mockDocuments = [
   {
     id: "doc-004",
     title: "Security Policy",
+    fileName: "somepolicy.pdf",
     docType: "pdf",
     uploadedBy: "Bob Brown",
     uploadedAt: "2025-07-15T08:30:00Z",
@@ -39,6 +43,7 @@ export const mockDocuments = [
   {
     id: "doc-005",
     title: "Security Policy",
+    fileName: "somepolicy.pdf",
     docType: "pdf",
     uploadedBy: "Bob Brown",
     uploadedAt: "2025-07-15T08:30:00Z",
@@ -48,6 +53,7 @@ export const mockDocuments = [
   {
     id: "doc-006",
     title: "Security Policy",
+    fileName: "somepolicy.pdf",
     docType: "pdf",
     uploadedBy: "Bob Brown",
     uploadedAt: "2025-07-15T08:30:00Z",
@@ -57,6 +63,7 @@ export const mockDocuments = [
   {
     id: "doc-007",
     title: "Security Policy",
+    fileName: "somepolicy.pdf",
     docType: "pdf",
     uploadedBy: "testuser2",
     uploadedAt: "2025-07-15T08:30:00Z",
@@ -66,6 +73,7 @@ export const mockDocuments = [
   {
     id: "doc-008",
     title: "Security Policy",
+    fileName: "somepolicy.pdf",
     docType: "pdf",
     uploadedBy: "testuser2",
     uploadedAt: "2025-07-15T08:30:00Z",
@@ -75,6 +83,7 @@ export const mockDocuments = [
   {
     id: "doc-009",
     title: "Security Policy",
+    fileName: "somepolicy.pdf",
     docType: "pdf",
     uploadedBy: "Bob Brown",
     uploadedAt: "2025-07-15T08:30:00Z",

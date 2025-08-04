@@ -63,7 +63,15 @@
 }
 
 .dashboard-header{
-    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 7vh;
+    margin-bottom: 1.5vh;
+}
+
+.logout-btn{
+    
 }
 
 .dashboard-body{
@@ -135,6 +143,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 100%;
     overflow-y: scroll;
     padding: 20px;
 }
@@ -143,6 +152,7 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    height: fit-content;
     width: 19.2vw;
     padding: 10px;
     padding-left: 20px;
@@ -176,6 +186,16 @@
     width: 30px;
 }
 
+.doc-card-actions .delete-btn:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.doc-card-actions .edit-btn:hover{
+    background-color: #3f51b5;
+    color: #fff;
+}
+
 .document-card:hover{
     box-shadow: rgba(108, 108, 255, 0.25) 0px 54px 55px, rgba(108, 108, 255, 0.12) 0px -12px 30px, rgba(108, 108, 255, 0.12) 0px 4px 6px, rgba(108, 108, 255, 0.17) 0px 12px 13px, rgba(108, 108, 255, 0.09) 0px -3px 5px;
 }
@@ -193,6 +213,15 @@
 
 .document-card .doc-type{
     margin-top: 0px;
+}
+
+.doc-fileName{
+    margin-top: 0px;
+    word-wrap: break-word;
+}
+
+.doc-uploadedBy{
+    margin-top: 10px;
 }
 
 .document-card .tags{

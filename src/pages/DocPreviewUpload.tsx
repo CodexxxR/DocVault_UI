@@ -9,7 +9,8 @@ import { getUserRoles } from "../utils/getUserRoles";
 import "../styles/docPreviewUpload.css"
 import FileUploader from "../components/FileUploader";
 
-const DocumentPreviewUpload = () => {
+
+const DocumentPreviewUpload= () => {
     const [file, setFile] = useState<File | null>(null);
     const [title, setTitle] = useState("");
     const [tags, setTags] = useState("");
@@ -30,7 +31,7 @@ const DocumentPreviewUpload = () => {
     const handleSubmit = () => {
         if (!file || !title) return alert("Title and file required");
 
-        const uploadedBy = "currentUser"; // Replace with real user
+        const uploadedBy = user?.profile?.preferred_username || "unknown"; // Replace with real user
         const uploadedAt = new Date().toISOString();
         const extensionMatch = file.name.match(/\.(\w+)$/);
         const docType = extensionMatch ? extensionMatch[1].toLowerCase() : "unknown";
@@ -39,11 +40,11 @@ const DocumentPreviewUpload = () => {
         id: `doc-${Date.now()}`,
         title,
         tags: tags.split(",").map(t => t.trim()),
-        file,
+        fileName: file.name,
         docType,
         uploadedBy,
         uploadedAt,
-        adminOnly: "false"
+        adminOnly: `${isAdmin}`
         };
 
         mockDocuments.push(newDoc); // temporary mock push

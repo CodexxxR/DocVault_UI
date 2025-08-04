@@ -1,5 +1,4 @@
 import { userManager } from '../auth/AuthService';
-import LoginHeader from '../components/LoginHeader';
 import '../styles/loginPage.css';
 
 const LoginPage = () => {
@@ -10,10 +9,13 @@ const LoginPage = () => {
 
     return (
         <div className="login-page">
-            <LoginHeader />
+            <header className="login-header">
+                <div className="logo">🗂️ <span className="logo-text">Doc<span>Vault</span></span>
+                </div>
+            </header>
             <main className="login-main">
                 <div className="login-card">
-                <div className='logo'>🗂️</div>
+                <div className='logo-main'>🗂️</div>
                 <h1>Welcome to DocVault!</h1>
                 <p className="subtitle">
                     Please Login with SSO in order to unlock all the features DocVault has to offer. We will keep your personal information safe and secure.
